@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Inicio de laravel con git
+                    Inicio de laravel con git william
                 </div>
 
                 
