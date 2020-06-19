@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -12,8 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->truncateTables(['rol']);
+        $this->truncateTables(['rol','permiso']);
         $this->call(TableRolSeeder::class);
+        $this->call(TablePermisoSeeder::class);
+       
     }
 
     protected function truncateTables( array $tablas){
