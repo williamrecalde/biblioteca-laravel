@@ -13,7 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    
+Route::get('/','InicioController@index');
+Route::get('/welcome',function(){
     return view('welcome');
+});
+
+Route::get('/saludo',function(){
+    return "Esto esta funcionando";
+});
+
+Route::get('/layout',function(){
+    return view('theme.lte.layout');
+});
+
+Route::get('/header',function(){
+    return view('theme.lte.header');
 });
