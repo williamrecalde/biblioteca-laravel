@@ -29,3 +29,12 @@ Route::get('/layout',function(){
 Route::get('/header',function(){
     return view('theme.lte.header');
 });
+
+//asi se cachea la ruta
+//Route::get('admin/permiso','Admin\PermisoController@index')->name('permiso');
+
+//asi no se cachea la ruta pero se agiliza para no escribir tanto prefijos
+Route::group(['prefix'=>'admin','namespace'=>'Admin'], function(){
+    Route::get('permiso','PermisoController@index')->name('permiso');
+    Route::get('permiso/crear','PermisoController@create')->name('crear_permiso');
+});
