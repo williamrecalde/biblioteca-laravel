@@ -29,7 +29,9 @@ class PermisoController extends Controller
      */
     public function create()
     {
-        dd('Creacion de un permiso');
+        
+       //return view('admin.permiso.index',compact('permisos'));
+       return view('admin.permiso.crear');
     }
 
     /**

@@ -21,7 +21,7 @@
 </head>
 <body class="hold-transition sidebar-mini layout-boxed">
 <!-- Site wrapper -->
-<div class="wrapper">
+<div class="container">
   <!-- Navbar -->
  @include("theme/$theme/header")
   <!-- /.navbar -->

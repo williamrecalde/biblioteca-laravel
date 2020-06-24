@@ -17,8 +17,10 @@ class CreateUsuarioTable extends Migration
             $table->id();
             $table->string('usuario',50);
             $table->string('password',100);
-            $table->string('nombre',50);
+            $table->string('nombre',50);            
             $table->timestamps();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
         });
     }
 
