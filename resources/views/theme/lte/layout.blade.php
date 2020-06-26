@@ -62,6 +62,10 @@
 <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset("assets/$theme/dist/js/demo.js")}}"></script>
+<!-- funciones agregadas jqueryvalidation y funciones propias-->
+<script src="{{asset("js/valjquery/jquery.validate.min.js")}}"></script>
+<script src="{{asset("js/valjquery/localization/messages_es.min.js")}}"></script>
+<script src="{{asset("js/valjquery/funciones.js")}}"></script>
 
 @yield('scripts')
 
