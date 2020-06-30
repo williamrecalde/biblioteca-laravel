@@ -16,11 +16,8 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="{{asset("css/custom.css")}}">
-  
   @yield('styles')
-  
+  <link rel="stylesheet" href="{{asset("css/custom.css")}}">  
 </head>
 <body class="hold-transition sidebar-mini layout-boxed">
 <!-- Site wrapper -->
@@ -63,6 +60,7 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset("assets/$theme/dist/js/demo.js")}}"></script>
 <!-- funciones agregadas jqueryvalidation y funciones propias-->
+@yield('scriptsplugins')
 <script src="{{asset("js/valjquery/jquery.validate.min.js")}}"></script>
 <script src="{{asset("js/valjquery/localization/messages_es.min.js")}}"></script>
 <script src="{{asset("js/valjquery/funciones.js")}}"></script>

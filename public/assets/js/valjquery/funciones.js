@@ -37,7 +37,8 @@ var Biblioteca = function(){
 
                 },
                 submitHandler: function(form){
-                    form.submit();
+                    //form.submit();
+                    return true;
                 }
             });
         },
