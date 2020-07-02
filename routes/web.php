@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\RolController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,8 +41,14 @@ Route::group(['prefix'=>'admin','namespace'=>'Admin'], function(){
     Route::get('menu','MenuController@index')->name('menu');
     Route::get('menu/create','MenuController@create')->name('crear_menu');
     Route::post('menu','MenuController@store')->name('guardar_menu');
+    Route::post('menu/guardar-orden','MenuController@guardarOrden')->name('guardar-orden');
+
+    /*RUTAS PARA ROL */
+    Route::get('rol','RolController@index')->name('rol');
+    Route::get('rol/create','RolController@create')->name('crear_rol');
+    Route::post('rol','RolController@store')->name('guardar_rol');
+    Route::get('rol/{id}/edit','RolController@edit')->name('editar_rol');
+    Route::put('rol/{id}/','RolController@update')->name('actualizar_rol');
+    Route::delete('rol/{id}/','RolController@destroy')->name('eliminar_rol');
 });
 
-////Route::group(['prefix'=>'admin','namespace'=>'Admin'], function(){
-    
-//});

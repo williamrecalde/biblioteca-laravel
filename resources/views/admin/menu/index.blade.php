@@ -26,7 +26,7 @@ Menú
                     <ol class="dd-list">
                         @foreach ($menus as $key=>$item)
                             @if($item['menu_id']!=0)
-
+                                @break;
                             @endif
                             @include('admin.menu.menu-item',['item'=>$item])
                         @endforeach
