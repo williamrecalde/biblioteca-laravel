@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="{{asset("assets/$theme/dist/css/adminlte.min.css")}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+ 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
  
@@ -69,9 +70,9 @@
 <script src="{{asset("js/valjquery/localization/messages_es.min.js")}}"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<script src="{{asset("js/valjquery/funciones.js")}}"></script>
+<script src="{{asset("assets/js/valjquery/funciones.js")}}"></script>
 
-<script src="{{asset("js/scripts.js")}}"></script>
+<script src="{{asset("assets/js/scripts.js")}}"></script>
 
 @yield('scripts')
 

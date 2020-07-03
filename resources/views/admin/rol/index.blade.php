@@ -3,7 +3,7 @@
 Roles  
 @endsection
 @section('scripts')
-<script src="{{asset('assets/pages/scripts/admin/crear.js')}}"></script> 
+<script src="{{asset('assets/pages/scripts/admin/index.js')}}"></script> 
 @endsection
 @section('contenido')
 <div class="row">
@@ -19,7 +19,7 @@ Roles
                 </div>
             </div>
             <div class="box-body">
-                <table class="table table-stripped table-bordered table-hover">
+                <table class="table table-stripped table-bordered table-hover" id="tabla-data">
                     <thead>
                         <tr>
                             <th>Nombre</th>
@@ -35,7 +35,7 @@ Roles
                                 <a href="{{route("editar_rol",['id'=>$data->id])}}" class="btn-accion-tabla tooltipsC" title="Editar este registro">
                                     <i class="fas fa-pencil-alt"></i>
                                 </a>
-                            <form action="{{route('eliminar_rol',['id'=>$data->id])}}" class="d-inline form-eliminar" form-eliminar method="post">
+                            <form action="{{route('eliminar_rol',['id'=>$data->id])}}" class="d-inline form-eliminar" method="post">
                                 @csrf @method('delete')
                                 <button type="submit" class="btn-accion-tabla eliminar tooltipsC" title="Eliminar registro">
                                     <i class="far fa-trash-alt"></i>
